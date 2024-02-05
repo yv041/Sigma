@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        
+        /* Element Selector */
+        /* div{
+            background-color: yellow;
+        } */
+
+        /* Class Selector */
+        .yellow{
+            background-color: yellow;
+        }
+
+        /* ID Selector */
+        #green{
+            background-color: green;
+        }
+
+        /* Child Selector - Should be direct child then only it works */
+        div > p{
+            color: blue;
+            background-color: pink;
+        }
+
+        /* Descendant Selector - should be descendant it will work  */
+        div p {
+            color: blue;
+            background-color: pink;
+        }
+
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: black;
+        }
+        a:link{
+            color: orange;
+        }
+        a:active{
+            background-color: aqua;
+        }
+        a:hover{
+            background-color: rgb(200, 219, 148);
+        }
+        p:first-child{
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="yellow">
+        I am a div
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro deleniti dolorem, doloremque impedit quae exercitationem eius? Numquam iusto consectetur nihil doloribus saepe ullam.</p>
+        <main class="one">
+            <p>I am one</p>
+            <p>I am second</p>
+        </main>
+    </div>
+    <div id="green">
+        I am a another div
+    </div>
+    <a href="https://www.google.com/">Go to Google</a>
+    <a href="https://www.facebook.com/">Go to Facebook</a>
+    
+</body>
+</html>

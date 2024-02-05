@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 12px;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;     /*    vw responsive width*/
+            height: 10vh;       /*  vh responsive height*/
+            margin: auto;     /*  Only for block level element not for inline element */
+            background-color: aquamarine;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            /* width: 2048px; */
+            min-height: 80vh;
+            /* height: 80vh; */
+            margin: 23px auto;
+            /* font-size: 18px; */
+            background-color: aquamarine;
+        }
+        .container > div{
+             /* font-size: 2em;    2 times of font-size of container 18 x 2 = 36px */
+             font-size: 2em;     /* 2 times the size of root elemnet which is html  */
+             width: 50%;
+             border: 2px solid red;
+
+        }
+        .container > div > div{
+            border: 2px solid blue;
+            width: 50%;
+        }
+        .mycont{
+            background-color: blueviolet;
+            color: beige;
+            font-size: 22px;
+            width: 100vh;      /* 100vmin = 100vh */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tempore molestiae quisquam accusamus quibusdam, pariatur modi consectetur aperiam alias voluptatem id facere debitis! Ab natus eligendi, a dolorem provident numquam!
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, nihil odio ab dolorum ducimus ex esse tenetur iste sint voluptates, veniam fugiat.
+            </div>
+        </div>
+    </div>
+    <div class="mycont">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi delectus iusto!
+    </div>
+</body>
+</html>

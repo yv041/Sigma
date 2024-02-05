@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+        }
+        .box1{
+            background-color: blue;
+            padding: 10px;
+            margin: 35px;
+            border: 3px solid black;
+            height: 200px;    /*  = content + border + padding(included) cause of box-sizing: border-box*/
+            box-sizing: border-box;
+        }
+        .box2{
+            background-color: pink;
+            padding: 10px;
+            margin: 25px;
+            border: 3px solid black;
+            height: 200px;    
+            box-sizing: border-box;
+        }
+        /* Margin Collapse - if the margin collapse then the greater value will of one will be applicable */ 
+
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am  another box</div>
+</body>
+</html>

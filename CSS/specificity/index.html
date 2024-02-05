@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        h1.yellow{
+            color: yellow;
+        }
+        .red{
+            color: red;
+        }
+        .purple{
+            color: purple;
+        }
+        h1{
+            color: aqua;
+        }
+        [data-x=a]{                     /* Attribute selector */
+             background-color: wheat;
+        }
+        /* Cascading Algorithm - Ordering
+        !Important(10000) > Inline Style(1000) > ID Selector(100) > Class or Attribute Selector or pseudo classes(10) > Element Selector(1) > Universal Selector(0) */
+        /* Calculation of specificity = 1+10+10+10+10=41
+        Pseudo-class: :hover adds another 10 points. */
+        a.yashclass.rohan-class[href]:hover{
+            color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow purple red" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+</html>
