@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Grid</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            top: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            padding: 10px;
+            justify-content: space-around;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        ul {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            display: flex;
+            list-style: none;
+            gap: 35px;
+            align-items: center
+        }
+
+        .logo img {
+            height: 50px;
+            width: 150px;
+        }
+
+        .icon img {
+            height: 25px;
+            width: 25px;
+
+        }
+
+        svg {
+            padding: 0px 1px;
+            cursor: pointer;
+        }
+
+        main {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            display: grid;
+            place-content: center;
+            grid-template-columns: repeat(3, 300px);
+            grid-template-rows: repeat(4, 150px);
+            row-gap: 25px;
+            column-gap: 25px;
+            text-align: center;
+            padding: 8%;
+        }
+
+        .item1 {
+            background-color: rgb(248, 248, 248);
+            padding: 5%;
+        }
+
+
+        .lang {
+            padding: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 300;
+            font-size: 15px;
+        }
+
+        .blue {
+            background-color: rgb(45, 152, 205);
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 8px 10px 8px 10px;
+            font-weight: 600;
+            color: white;
+
+        }
+
+        .green {
+            background-color: rgb(72, 205, 45);
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 8px 10px 8px 10px;
+            font-weight: 600;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo"><img src="download.jfif" alt="logo"></div>
+                <ul>
+                    <li class="item">Home <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                            viewBox="0 0 24 24" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#8b8686"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li class="item">Products <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                            viewBox="0 0 24 24" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#8b8686"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li class="item">Pricing <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                            viewBox="0 0 24 24" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#8b8686"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li class="item">Resources <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                            viewBox="0 0 24 24" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#8b8686"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li class="item">About Us <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                            viewBox="0 0 24 24" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#8b8686"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li class="icon"><img src="language-icon.webp" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="item1 English">English
+            <br>
+            <div class="lang"><br></div><br>
+            <button class="blue">Download 32-bit</button>
+            <button class="green">Download 64-bit</button>
+        </div>
+        <div class="item1 Deutsch">Deutsch
+            <br>
+            <div class="lang">German</div><br>
+            <button class="blue">Download 32-bit</button>
+            <button class="green">Download 64-bit</button>
+
+        </div>
+        <div class="item1 Italiano">Italiano
+            <br>
+            <div class="lang">Italian</div><br>
+            <button class="blue">Download 32-bit</button>
+            <button class="green">Download 64-bit</button>
+        </div>
+        <div class="item1 Español">Español
+            <br>
+            <div class="lang">Spanish</div><br>
+            <button class="blue">Download 32-bit</button>
+            <button class="green">Download 64-bit</button>
+        </div>
+        <div class="item1 français">français
+            <br>
+            <div class="lang">French</div><br>
+            <button class="blue">Download 32-bit</button>
+            <button class="green">Download 64-bit</button>
+        </div>
+        <div class="item1 Português brasileiro">Português brasileiro
+            <br>
+            <div class="lang">Brazilian Portuguese</div><br>
+            <button class="blue">Download 32-bit</button>
+            <button class="green">Download 64-bit</button>
+        </div>
+        <div class="item1 日本">日本
+            <br>
+            <div class="lang">Japanese</div><br>
+            <button class="blue">Download 32-bit</button>
+            <button class="green">Download 64-bit</button>
+        </div>
+        <div class="item1 한국어">한국어
+            <br>
+            <div class="lang">Korean</div><br>
+            <button class="blue">Download 32-bit</button>
+            <button class="green">Download 64-bit</button>
+        </div>
+        <div class="item1 中国">中国
+            <br>
+            <div class="lang">Chinese</div><br>
+            <button class="blue">Download 32-bit</button>
+            <button class="green">Download 64-bit</button>
+        </div>
+        <div class="item1 中國">中國
+            <br>
+            <div class="lang">Traditional Chinese</div><br>
+            <button class="blue">Download 32-bit</button>
+            <button class="green">Download 64-bit</button>
+        </div>
+    </main>
+</body>
+
+</html>
